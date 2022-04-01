@@ -30,6 +30,10 @@ app.use(cors());
 
 // ___________________________________________________________________________________________________________________________
 
+app.get('/trial', async (req, res) => {
+	res.send('Api working');
+});
+
 app.get('/', async (req, res) => {
 	const data = [];
 	await db.collection('data').get().then((snapshot) => {
@@ -67,10 +71,6 @@ app.get('/:id', async (req, res) => {
 			res.send(error);
 			console.log(error);
 		});
-});
-
-app.get('/trial', async (req, res) => {
-	res.send('Api working');
 });
 
 // ___________________________________________________________________________________________________________________________
