@@ -44,7 +44,7 @@ app.post("/tailoryourjourney", async (req, res) => {
     headers: {
       "Content-Type": "application/json",
       Authorization:
-        "Basic Y2tfOGJkMDhiNTg0MzNkZDRkMjc0ZTVmMGFlNTc1M2U4Y2Y4OTdhNWY1OTpjc18wM2E2NDk1MWM2NzcxM2RhNWUwOWJiNmMxY2FiMjNkOTFlY2ViNmJk",
+        "Auth id",
     },
     data: req.body,
   };
@@ -60,7 +60,7 @@ app.post("/tailoryourjourney", async (req, res) => {
         headers: {
           "Content-Type": "application/json",
           Authorization:
-            "Basic Y2tfOGJkMDhiNTg0MzNkZDRkMjc0ZTVmMGFlNTc1M2U4Y2Y4OTdhNWY1OTpjc18wM2E2NDk1MWM2NzcxM2RhNWUwOWJiNmMxY2FiMjNkOTFlY2ViNmJk",
+            "Auth id",
         },
       };
 
